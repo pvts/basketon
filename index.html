@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BasketOn Dashboard</title>
+    <title>BasketOn</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -45,11 +45,14 @@
             border-radius: 8px;
             width: 200px;
         }
+        .up-next h2 {
+            text-decoration: underline;
+        }
         .content {
             flex: 1;
             margin-left: 20px;
         }
-        .articles, .highlights {
+        .articles, .highlights, .podcasts {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 10px;
@@ -79,6 +82,7 @@
             <a href="#">Teams</a>
             <a href="#">Stories</a>
             <a href="#">More</a>
+            <a href="#">⚙️</a>
         </nav>
     </header>
     
@@ -93,7 +97,6 @@
                 <p>OARLY 22:30 DRX</p>
                 <p>LITAP 22:30 OARDAX</p>
             </div>
-            
         </aside>
 
         <section class="content">
@@ -141,7 +144,11 @@
             <div class="podcasts">
                 <article>
                     <img src="images/podcasts/podcaster.jpg" width=200 height=200 alt="Podcaster">
-                    <p> Shiw talks to fans after big win.</p>
+                    <p> Shiw talks to fans after big win</p>
+                </article>
+                <article>
+                    <img src="images/podcasts/podcaster.jpg" width=200 height=200 alt="Podcaster">
+                    <p> Shiw discusses PIonrds league title chances</p>
                 </article>
             </div>
 
