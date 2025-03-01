@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasketOn Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #1e1e1e;
+            padding: 10px 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            padding: 20px;
+        }
+        .up-next {
+            background: #222;
+            padding: 15px;
+            border-radius: 8px;
+            width: 200px;
+        }
+        .content {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .articles, .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        article {
+            background: #333;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1e1e1e;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">BasketOn</div>
+        <input type="text" placeholder="Search">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Matches</a>
+            <a href="#">News</a>
+            <a href="#">Leagues</a>
+            <a href="#">Teams</a>
+            <a href="#">Stories</a>
+            <a href="#">More</a>
+        </nav>
+    </header>
+    
+    <main>
+        <aside class="up-next">
+            <h2>UP NEXT</h2>
+            <div class="games">
+                <p>ANORAX 21:00 PROTIN</p>
+                <p>PSD 21:00 DRX</p>
+                <p>ARS 21:15 DRX</p>
+                <p>PSD 22:00 PIEST</p>
+                <p>OARLY 22:30 DRX</p>
+                <p>LITAP 22:30 OARDAX</p>
+            </div>
+        </aside>
+
+        <section class="content">
+            <h2>Top Reads</h2>
+            <div class="articles">
+                <article>Giannis dominates despite 48 points</article>
+                <article>Eron believes his team will win</article>
+                <article>Danken missed last free throw</article>
+                <article>Arvix disappointed with defense</article>
+            </div>
+
+            <h2>Highlights</h2>
+            <div class="highlights">
+                <article>Panoks win against Doms</article>
+                <article>Top 5 slam dunks</article>
+                <article>Last-minute winner from Artonis</article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BasketOn. All rights reserved.</p>
+    </footer>
+</body>
+</html>
